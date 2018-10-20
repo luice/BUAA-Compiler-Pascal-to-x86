@@ -1,0 +1,618 @@
+  1           CONST    const
+  2      IDENTIFIER    TEN
+  3           EQUAL    =
+  4          NUMBER    10
+  5           COMMA    ,
+  6      IDENTIFIER    NINE
+  7           EQUAL    =
+  8            PLUS    +
+  9          NUMBER    9
+ 10           COMMA    ,
+ 11      IDENTIFIER    EIGHT1
+ 12           EQUAL    =
+ 13           MINUS    -
+ 14          NUMBER    8
+ 15           COMMA    ,
+ 16      IDENTIFIER    A
+ 17           EQUAL    =
+ 18    SINGLE_QUOTE    '
+ 19        CHARATER    A
+ 20    SINGLE_QUOTE    '
+ 21           COMMA    ,
+ 22      IDENTIFIER    ZERO
+ 23           EQUAL    =
+ 24    SINGLE_QUOTE    '
+ 25        CHARATER    0
+ 26    SINGLE_QUOTE    '
+ 27       SEMICOLON    ;
+ 28             VAR    var
+ 29      IDENTIFIER    int1
+ 30           COMMA    ,
+ 31      IDENTIFIER    int2
+ 32           COLON    :
+ 33         INTEGER    integer
+ 34       SEMICOLON    ;
+ 35      IDENTIFIER    ch1
+ 36           COMMA    ,
+ 37      IDENTIFIER    ch2
+ 38           COLON    :
+ 39            CHAR    char
+ 40       SEMICOLON    ;
+ 41      IDENTIFIER    intArray
+ 42           COLON    :
+ 43           ARRAY    array
+ 44     LEFT_SQUARE    [
+ 45          NUMBER    3
+ 46    RIGHT_SQUARE    ]
+ 47              OF    of
+ 48         INTEGER    integer
+ 49       SEMICOLON    ;
+ 50      IDENTIFIER    chArray
+ 51           COLON    :
+ 52           ARRAY    array
+ 53     LEFT_SQUARE    [
+ 54          NUMBER    1
+ 55    RIGHT_SQUARE    ]
+ 56              OF    of
+ 57            CHAR    char
+ 58       SEMICOLON    ;
+ 59       PROCEDURE    procedure
+ 60      IDENTIFIER    proc1
+ 61       SEMICOLON    ;
+ 62           BEGIN    begin
+ 63           WRITE    write
+ 64    LEFT_BRACKET    (
+ 65    DOUBLE_QUOTE    "
+ 66          STRING    proc1 start...
+ 67    DOUBLE_QUOTE    "
+ 68   RIGHT_BRACKET    )
+ 69       SEMICOLON    ;
+ 70      IDENTIFIER    int1
+ 71          ASSIGN    :=
+ 72           MINUS    -
+ 73    LEFT_BRACKET    (
+ 74      IDENTIFIER    TEN
+ 75            PLUS    +
+ 76      IDENTIFIER    NINE
+ 77   RIGHT_BRACKET    )
+ 78        ASTERISK    *
+ 79      IDENTIFIER    EIGHT1
+ 80            PLUS    +
+ 81          NUMBER    1024
+ 82       SEMICOLON    ;
+ 83      IDENTIFIER    ch1
+ 84          ASSIGN    :=
+ 85      IDENTIFIER    A
+ 86       SEMICOLON    ;
+ 87      IDENTIFIER    ch2
+ 88          ASSIGN    :=
+ 89      IDENTIFIER    ZERO
+ 90       SEMICOLON    ;
+ 91           WRITE    write
+ 92    LEFT_BRACKET    (
+ 93    DOUBLE_QUOTE    "
+ 94          STRING    int1: 
+ 95    DOUBLE_QUOTE    "
+ 96           COMMA    ,
+ 97      IDENTIFIER    int1
+ 98   RIGHT_BRACKET    )
+ 99       SEMICOLON    ;
+100           WRITE    write
+101    LEFT_BRACKET    (
+102    DOUBLE_QUOTE    "
+103          STRING    ch1: 
+104    DOUBLE_QUOTE    "
+105           COMMA    ,
+106      IDENTIFIER    ch1
+107   RIGHT_BRACKET    )
+108       SEMICOLON    ;
+109           WRITE    write
+110    LEFT_BRACKET    (
+111    DOUBLE_QUOTE    "
+112          STRING    ch2: 
+113    DOUBLE_QUOTE    "
+114           COMMA    ,
+115      IDENTIFIER    ch2
+116   RIGHT_BRACKET    )
+117       SEMICOLON    ;
+118           WRITE    write
+119    LEFT_BRACKET    (
+120    DOUBLE_QUOTE    "
+121          STRING    chArray:
+122    DOUBLE_QUOTE    "
+123   RIGHT_BRACKET    )
+124       SEMICOLON    ;
+125             FOR    for
+126      IDENTIFIER    int2
+127          ASSIGN    :=
+128          NUMBER    0
+129      IDENTIFIER    downto
+130          NUMBER    0
+131              DO    do
+132           BEGIN    begin
+133      IDENTIFIER    chArray
+134     LEFT_SQUARE    [
+135      IDENTIFIER    int2
+136    RIGHT_SQUARE    ]
+137          ASSIGN    :=
+138      IDENTIFIER    ZERO
+139       SEMICOLON    ;
+140           WRITE    write
+141    LEFT_BRACKET    (
+142      IDENTIFIER    chArray
+143     LEFT_SQUARE    [
+144      IDENTIFIER    int2
+145    RIGHT_SQUARE    ]
+146   RIGHT_BRACKET    )
+147       SEMICOLON    ;
+148             END    end
+149       SEMICOLON    ;
+150           WRITE    write
+151    LEFT_BRACKET    (
+152    DOUBLE_QUOTE    "
+153          STRING    intArray:
+154    DOUBLE_QUOTE    "
+155   RIGHT_BRACKET    )
+156       SEMICOLON    ;
+157             FOR    for
+158      IDENTIFIER    int2
+159          ASSIGN    :=
+160          NUMBER    0
+161      IDENTIFIER    to
+162          NUMBER    2
+163              DO    do
+164           BEGIN    begin
+165      IDENTIFIER    intArray
+166     LEFT_SQUARE    [
+167      IDENTIFIER    int2
+168    RIGHT_SQUARE    ]
+169          ASSIGN    :=
+170      IDENTIFIER    int2
+171       SEMICOLON    ;
+172           WRITE    write
+173    LEFT_BRACKET    (
+174      IDENTIFIER    intArray
+175     LEFT_SQUARE    [
+176      IDENTIFIER    int2
+177    RIGHT_SQUARE    ]
+178   RIGHT_BRACKET    )
+179             END    end
+180       SEMICOLON    ;
+181           BEGIN    begin
+182           WRITE    write
+183    LEFT_BRACKET    (
+184    DOUBLE_QUOTE    "
+185          STRING    proc1 end.
+186    DOUBLE_QUOTE    "
+187   RIGHT_BRACKET    )
+188       SEMICOLON    ;
+189             END    end
+190             END    end
+191       SEMICOLON    ;
+192        FUNCTION    function
+193      IDENTIFIER    func1
+194    LEFT_BRACKET    (
+195      IDENTIFIER    num
+196           COLON    :
+197         INTEGER    integer
+198   RIGHT_BRACKET    )
+199           COLON    :
+200         INTEGER    integer
+201       SEMICOLON    ;
+202             VAR    var
+203      IDENTIFIER    steps
+204           COLON    :
+205         INTEGER    integer
+206       SEMICOLON    ;
+207       PROCEDURE    procedure
+208      IDENTIFIER    mov
+209    LEFT_BRACKET    (
+210      IDENTIFIER    tstart
+211           COMMA    ,
+212      IDENTIFIER    tend
+213           COMMA    ,
+214      IDENTIFIER    tmid
+215           COMMA    ,
+216      IDENTIFIER    num
+217           COLON    :
+218         INTEGER    integer
+219       SEMICOLON    ;
+220             VAR    var
+221      IDENTIFIER    count
+222           COLON    :
+223         INTEGER    integer
+224   RIGHT_BRACKET    )
+225       SEMICOLON    ;
+226           BEGIN    begin
+227              IF    if
+228      IDENTIFIER    num
+229         GREATER    >
+230          NUMBER    0
+231           BEGIN    begin
+232      IDENTIFIER    mov
+233    LEFT_BRACKET    (
+234      IDENTIFIER    tstart
+235           COMMA    ,
+236      IDENTIFIER    tmid
+237           COMMA    ,
+238      IDENTIFIER    tend
+239           COMMA    ,
+240      IDENTIFIER    num
+241           MINUS    -
+242          NUMBER    1
+243           COMMA    ,
+244      IDENTIFIER    count
+245   RIGHT_BRACKET    )
+246       SEMICOLON    ;
+247      IDENTIFIER    count
+248          ASSIGN    :=
+249      IDENTIFIER    count
+250            PLUS    +
+251          NUMBER    1
+252       SEMICOLON    ;
+253           WRITE    write
+254    LEFT_BRACKET    (
+255    DOUBLE_QUOTE    "
+256          STRING    step 
+257    DOUBLE_QUOTE    "
+258           COMMA    ,
+259      IDENTIFIER    count
+260   RIGHT_BRACKET    )
+261       SEMICOLON    ;
+262           WRITE    write
+263    LEFT_BRACKET    (
+264    DOUBLE_QUOTE    "
+265          STRING    from: 
+266    DOUBLE_QUOTE    "
+267           COMMA    ,
+268      IDENTIFIER    tstart
+269   RIGHT_BRACKET    )
+270       SEMICOLON    ;
+271           WRITE    write
+272    LEFT_BRACKET    (
+273    DOUBLE_QUOTE    "
+274          STRING    to: 
+275    DOUBLE_QUOTE    "
+276           COMMA    ,
+277      IDENTIFIER    tend
+278   RIGHT_BRACKET    )
+279       SEMICOLON    ;
+280      IDENTIFIER    mov
+281    LEFT_BRACKET    (
+282      IDENTIFIER    tmid
+283           COMMA    ,
+284      IDENTIFIER    tend
+285           COMMA    ,
+286      IDENTIFIER    tstart
+287           COMMA    ,
+288      IDENTIFIER    num
+289           MINUS    -
+290          NUMBER    1
+291           COMMA    ,
+292      IDENTIFIER    count
+293   RIGHT_BRACKET    )
+294       SEMICOLON    ;
+295             END    end
+296             END    end
+297       SEMICOLON    ;
+298           BEGIN    begin
+299           WRITE    write
+300    LEFT_BRACKET    (
+301    DOUBLE_QUOTE    "
+302          STRING    func1 start...
+303    DOUBLE_QUOTE    "
+304   RIGHT_BRACKET    )
+305       SEMICOLON    ;
+306           WRITE    write
+307    LEFT_BRACKET    (
+308    DOUBLE_QUOTE    "
+309          STRING    argument is num: integer
+310    DOUBLE_QUOTE    "
+311   RIGHT_BRACKET    )
+312       SEMICOLON    ;
+313           WRITE    write
+314    LEFT_BRACKET    (
+315      IDENTIFIER    num
+316   RIGHT_BRACKET    )
+317       SEMICOLON    ;
+318           WRITE    write
+319    LEFT_BRACKET    (
+320    DOUBLE_QUOTE    "
+321          STRING    Hanoi Tower with levels: 
+322    DOUBLE_QUOTE    "
+323           COMMA    ,
+324      IDENTIFIER    num
+325   RIGHT_BRACKET    )
+326       SEMICOLON    ;
+327      IDENTIFIER    steps
+328          ASSIGN    :=
+329          NUMBER    0
+330       SEMICOLON    ;
+331      IDENTIFIER    steps
+332          ASSIGN    :=
+333      IDENTIFIER    mov
+334    LEFT_BRACKET    (
+335          NUMBER    1
+336           COMMA    ,
+337          NUMBER    3
+338           COMMA    ,
+339          NUMBER    2
+340           COMMA    ,
+341      IDENTIFIER    num
+342           COMMA    ,
+343      IDENTIFIER    steps
+344   RIGHT_BRACKET    )
+345       SEMICOLON    ;
+346           WRITE    write
+347    LEFT_BRACKET    (
+348    DOUBLE_QUOTE    "
+349          STRING    The total number of steps is: 
+350    DOUBLE_QUOTE    "
+351           COMMA    ,
+352      IDENTIFIER    steps
+353   RIGHT_BRACKET    )
+354       SEMICOLON    ;
+355           WRITE    write
+356    LEFT_BRACKET    (
+357    DOUBLE_QUOTE    "
+358          STRING    func1 end with: 
+359    DOUBLE_QUOTE    "
+360           COMMA    ,
+361      IDENTIFIER    steps
+362   RIGHT_BRACKET    )
+363       SEMICOLON    ;
+364      IDENTIFIER    func1
+365          ASSIGN    :=
+366      IDENTIFIER    steps
+367       SEMICOLON    ;
+368             END    end
+369       SEMICOLON    ;
+370        FUNCTION    function
+371      IDENTIFIER    func2
+372           COLON    :
+373            CHAR    char
+374       SEMICOLON    ;
+375           BEGIN    begin
+376           WRITE    write
+377    LEFT_BRACKET    (
+378    DOUBLE_QUOTE    "
+379          STRING    func2 start...
+380    DOUBLE_QUOTE    "
+381   RIGHT_BRACKET    )
+382       SEMICOLON    ;
+383           WRITE    write
+384    LEFT_BRACKET    (
+385    DOUBLE_QUOTE    "
+386          STRING    Please input ch1, ch2, int1...
+387    DOUBLE_QUOTE    "
+388   RIGHT_BRACKET    )
+389       SEMICOLON    ;
+390            READ    read
+391    LEFT_BRACKET    (
+392      IDENTIFIER    ch1
+393           COMMA    ,
+394      IDENTIFIER    ch2
+395   RIGHT_BRACKET    )
+396       SEMICOLON    ;
+397            READ    read
+398    LEFT_BRACKET    (
+399      IDENTIFIER    int1
+400   RIGHT_BRACKET    )
+401       SEMICOLON    ;
+402              IF    if
+403      IDENTIFIER    ch1
+404      LESS_EQUAL    <=
+405      IDENTIFIER    ch2
+406            THEN    then
+407              IF    if
+408      IDENTIFIER    ch1
+409            LESS    <
+410      IDENTIFIER    ch2
+411            THEN    then
+412              IF    if
+413      IDENTIFIER    int1
+414           EQUAL    =
+415          NUMBER    0
+416            THEN    then
+417           WRITE    write
+418    LEFT_BRACKET    (
+419    DOUBLE_QUOTE    "
+420          STRING    <=
+421    DOUBLE_QUOTE    "
+422   RIGHT_BRACKET    )
+423            ELSE    else
+424           WRITE    write
+425    LEFT_BRACKET    (
+426    DOUBLE_QUOTE    "
+427          STRING    <
+428    DOUBLE_QUOTE    "
+429   RIGHT_BRACKET    )
+430            ELSE    else
+431              IF    if
+432      IDENTIFIER    int1
+433   GREATER_EQUAL    >=
+434          NUMBER    0
+435            THEN    then
+436              IF    if
+437      IDENTIFIER    int1
+438         GREATER    >
+439          NUMBER    0
+440            THEN    then
+441           WRITE    write
+442    LEFT_BRACKET    (
+443    DOUBLE_QUOTE    "
+444          STRING    <>
+445    DOUBLE_QUOTE    "
+446   RIGHT_BRACKET    )
+447            ELSE    else
+448           WRITE    write
+449    LEFT_BRACKET    (
+450    DOUBLE_QUOTE    "
+451          STRING    =
+452    DOUBLE_QUOTE    "
+453   RIGHT_BRACKET    )
+454            ELSE    else
+455           WRITE    write
+456    LEFT_BRACKET    (
+457    DOUBLE_QUOTE    "
+458          STRING    <>
+459    DOUBLE_QUOTE    "
+460   RIGHT_BRACKET    )
+461            ELSE    else
+462              IF    if
+463      IDENTIFIER    int1
+464         INEQUAL    <>
+465          NUMBER    0
+466            THEN    then
+467           WRITE    write
+468    LEFT_BRACKET    (
+469    DOUBLE_QUOTE    "
+470          STRING    >
+471    DOUBLE_QUOTE    "
+472   RIGHT_BRACKET    )
+473            ELSE    else
+474           WRITE    write
+475    LEFT_BRACKET    (
+476    DOUBLE_QUOTE    "
+477          STRING    >=
+478    DOUBLE_QUOTE    "
+479   RIGHT_BRACKET    )
+480       SEMICOLON    ;
+481           WRITE    write
+482    LEFT_BRACKET    (
+483    DOUBLE_QUOTE    "
+484          STRING    func2 end with: 
+485    DOUBLE_QUOTE    "
+486           COMMA    ,
+487      IDENTIFIER    ZERO
+488   RIGHT_BRACKET    )
+489       SEMICOLON    ;
+490      IDENTIFIER    func2
+491          ASSIGN    :=
+492      IDENTIFIER    ZERO
+493       SEMICOLON    ;
+494             END    end
+495       SEMICOLON    ;
+496       PROCEDURE    procedure
+497      IDENTIFIER    proc2
+498    LEFT_BRACKET    (
+499      IDENTIFIER    int1
+500           COMMA    ,
+501      IDENTIFIER    int2
+502           COLON    :
+503         INTEGER    integer
+504       SEMICOLON    ;
+505             VAR    var
+506      IDENTIFIER    int3
+507           COLON    :
+508         INTEGER    integer
+509   RIGHT_BRACKET    )
+510       SEMICOLON    ;
+511           BEGIN    begin
+512           WRITE    write
+513    LEFT_BRACKET    (
+514    DOUBLE_QUOTE    "
+515          STRING    proc2 start...
+516    DOUBLE_QUOTE    "
+517   RIGHT_BRACKET    )
+518       SEMICOLON    ;
+519           WRITE    write
+520    LEFT_BRACKET    (
+521    DOUBLE_QUOTE    "
+522          STRING    arguments are int1, int2: integer; var int3: integer
+523    DOUBLE_QUOTE    "
+524   RIGHT_BRACKET    )
+525       SEMICOLON    ;
+526           WRITE    write
+527    LEFT_BRACKET    (
+528      IDENTIFIER    int1
+529   RIGHT_BRACKET    )
+530       SEMICOLON    ;
+531           WRITE    write
+532    LEFT_BRACKET    (
+533      IDENTIFIER    int2
+534   RIGHT_BRACKET    )
+535       SEMICOLON    ;
+536           WRITE    write
+537    LEFT_BRACKET    (
+538      IDENTIFIER    int3
+539   RIGHT_BRACKET    )
+540       SEMICOLON    ;
+541      IDENTIFIER    int3
+542          ASSIGN    :=
+543          NUMBER    0
+544       SEMICOLON    ;
+545              DO    do
+546           BEGIN    begin
+547      IDENTIFIER    int3
+548          ASSIGN    :=
+549      IDENTIFIER    int3
+550            PLUS    +
+551      IDENTIFIER    int2
+552       SEMICOLON    ;
+553      IDENTIFIER    int1
+554          ASSIGN    :=
+555      IDENTIFIER    int1
+556            PLUS    +
+557          NUMBER    1
+558       SEMICOLON    ;
+559             END    end
+560           WHILE    while
+561      IDENTIFIER    int1
+562            LESS    <
+563      IDENTIFIER    int2
+564       SEMICOLON    ;
+565           WRITE    write
+566    LEFT_BRACKET    (
+567    DOUBLE_QUOTE    "
+568          STRING    int3 now is :
+569    DOUBLE_QUOTE    "
+570           COMMA    ,
+571      IDENTIFIER    int3
+572   RIGHT_BRACKET    )
+573       SEMICOLON    ;
+574           WRITE    write
+575    LEFT_BRACKET    (
+576    DOUBLE_QUOTE    "
+577          STRING    proc2 end.
+578    DOUBLE_QUOTE    "
+579   RIGHT_BRACKET    )
+580       SEMICOLON    ;
+581             END    end
+582       SEMICOLON    ;
+583           BEGIN    begin
+584      IDENTIFIER    proc1
+585       SEMICOLON    ;
+586      IDENTIFIER    proc2
+587    LEFT_BRACKET    (
+588      IDENTIFIER    int1
+589           COMMA    ,
+590      IDENTIFIER    int2
+591           COMMA    ,
+592      IDENTIFIER    intArray
+593     LEFT_SQUARE    [
+594          NUMBER    3
+595        ASTERISK    *
+596          NUMBER    3
+597           MINUS    -
+598          NUMBER    2
+599        ASTERISK    *
+600          NUMBER    5
+601            PLUS    +
+602          NUMBER    1
+603    RIGHT_SQUARE    ]
+604   RIGHT_BRACKET    )
+605       SEMICOLON    ;
+606      IDENTIFIER    int1
+607          ASSIGN    :=
+608      IDENTIFIER    func1
+609    LEFT_BRACKET    (
+610          NUMBER    4
+611   RIGHT_BRACKET    )
+612       SEMICOLON    ;
+613      IDENTIFIER    ch1
+614          ASSIGN    :=
+615      IDENTIFIER    func2
+616       SEMICOLON    ;
+617             END    end
+618          PERIOD    .

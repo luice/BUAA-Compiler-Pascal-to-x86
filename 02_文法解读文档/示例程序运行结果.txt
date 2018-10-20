@@ -1,0 +1,129 @@
+【说明】
+	我的程序中输出语句很多，但是与输入有关的部分只有最后的一小部分。
+	在提示用户输入之前，程序有如下输出：
+proc1 start...
+int1: 1176
+ch1: A
+ch2: 0
+chArray:
+0
+intArray:
+0
+1
+2
+proc1 end.
+proc2 start...
+arguments are int1, int2: integer; var int3: integer
+1176
+3
+0
+int3 now is :3
+proc2 end.
+func1 start...
+argument is num: integer
+4
+Hanoi Tower with levels: 4
+step 1
+from: 1
+to: 2
+step 2
+from: 1
+to: 3
+step 3
+from: 2
+to: 3
+step 4
+from: 1
+to: 2
+step 5
+from: 3
+to: 1
+step 6
+from: 3
+to: 2
+step 7
+from: 1
+to: 2
+step 8
+from: 1
+to: 3
+step 9
+from: 2
+to: 3
+step 10
+from: 2
+to: 1
+step 11
+from: 3
+to: 1
+step 12
+from: 2
+to: 3
+step 13
+from: 1
+to: 2
+step 14
+from: 1
+to: 3
+step 15
+from: 2
+to: 3
+The total number of steps is: 15
+func1 end with: 15
+func2 start...
+Please input ch1, ch2, int1...
+
+	当用户输入三个值后（注意忽略考虑空白符，前两个是非空白字符，第三个是整数），
+	程序会根据用户输入的这三个值输出一行，内容为以下六种之一：
+<
+<=
+>
+>=
+=
+<>
+	这里的程序逻辑是这样的：比较 ch1 和 ch2 的 ASCII 编码的大小，
+	前者之于后者，有大于、等于、小于三种关系，
+	再看 int1 与 0 的关系，只考虑相等与否。
+	以上有六种情况，分别对应六种输出：
+		* ch1 < ch2 && int1 != 0
+			<
+		* ch1 < ch2 && int1 == 0
+			<=
+		* ch1 > ch2 && int1 != 0
+			>
+		* ch1 > ch2 && int1 == 0
+			>=
+		* ch1 == ch2 && int1 != 0
+			<>
+		* ch1 == ch2 && int1 == 0
+			=
+	以上是实际的逻辑，但是代码中为了使这六个关系运算符都至少出现一次，使用了七个分支。
+	所以要覆盖所有分支，要设计七个测试用例。见下文。
+
+	最后有一行与用户输入无关的输出：
+func2 end with: 0
+
+【简述声明】	
+以下用例只描述输入以及与输入有关的那一行。
+
+【用例1】
+	输入：a b 0
+	输出：<=
+【用例2】
+	输入：a b 1
+	输出：=
+【用例3】
+	输入：a a 1
+	输出：<>
+【用例4】
+	输入：a a 0
+	输出：=
+【用例5】
+	输入：a a -1
+	输出：<>
+【用例6】
+	输入：b a -1
+	输出：>
+【用例7】
+	输入：b a 0
+	输出：>=

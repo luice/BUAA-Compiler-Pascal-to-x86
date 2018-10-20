@@ -1,0 +1,109 @@
+const TEN = 0010,
+      NINE = +9,
+      EIGHT1 = -8,
+      A = 'A',
+      ZERO = '0';
+var int1, int2: integer;
+    ch1, ch2: char;
+    intArray: array[3] of integer;
+    chArray: array[1] of char;
+procedure proc1;
+  begin
+    write("proc1 start...");
+    int1 := -(TEN + NINE) * EIGHT1 + 1024;
+    ch1 := A;
+    ch2 := ZERO;
+    write("int1: ", int1);
+    write("ch1: ", ch1);
+    write("ch2: ", ch2);
+    write("chArray:");
+    for int2 := 0 downto 0 do
+      begin
+        chArray[int2] := ZERO;
+        write(chArray[int2]);
+      end;
+    write("intArray:");
+    for int2 := 0 to 2 do
+      begin
+        intArray[int2] := int2;
+        write(intArray[int2])
+      end;
+    begin
+      write("proc1 end.");
+    end
+  end;
+function func1(num: integer): integer;
+  var steps: integer;
+  procedure mov(tstart, tend, tmid, num: integer; var count: integer);
+    begin
+      if num > 0
+        begin
+          mov(tstart, tmid, tend, num-1, count);
+          count := count + 1;
+          write("step ", count);
+          write("from: ", tstart);
+          write("to: ", tend);
+          mov(tmid, tend, tstart, num-1, count);
+        end
+    end;
+  begin
+    write("func1 start...");
+    write("argument is num: integer");
+    write(num);
+    write("Hanoi Tower with levels: ", num);
+    steps := 0;
+    steps := mov(1, 3, 2, num, steps);
+    write("The total number of steps is: ", steps);
+    write("func1 end with: ", steps);
+    func1 := steps;
+  end;
+function func2: char;
+  begin
+    write("func2 start...");
+    write("Please input ch1, ch2, int1...");
+    read(ch1, ch2);
+    read(int1);
+    if ch1 <= ch2 then
+      if ch1 < ch2 then
+        if int1 = 0 then
+          write("<=")
+        else
+          write("<")
+      else if int1 >= 0 then
+        if int1 > 0 then
+          write("<>")
+        else
+          write("=")
+      else
+        write("<>")
+    else
+      if int1 <> 0 then
+        write(">")
+      else
+        write(">=");
+    write("func2 end with: ", ZERO);
+    func2 := ZERO;
+  end;
+procedure proc2(int1, int2: integer; var int3: integer);
+  begin
+    write("proc2 start...");
+    write("arguments are int1, int2: integer; var int3: integer");
+    write(int1);
+    write(int2);
+    write(int3);
+    int3 := 0;
+    do
+      begin
+        int3 := int3 + int2;
+        int1 := int1 + 1;
+      end
+    while int1 < int2;
+    write("int3 now is :", int3);
+    write("proc2 end.");
+  end;
+begin
+  proc1;
+  proc2(int1, int2, intArray[3 * 3 - 2 * 5 + 1]);
+  int1 := func1(4);
+  ch1 := func2;
+end.
